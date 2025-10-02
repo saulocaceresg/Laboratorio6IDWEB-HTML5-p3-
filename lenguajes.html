@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 06 - Formularios | Lenguajes de Programación</title>
+</head>
+<body>
+    <header> <!-- Encabezado con menú de navegación -->
+        <h1>Lenguajes de programación</h1>
+        <nav>
+            <nav>
+            <p>Menú de navegación:</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="lenguajes.html">Lenguajes</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr><br>
+
+    <main> <!-- Contenido principal -->
+        <form action="#" method="post">
+            <label for="preferencias"> <!-- Textarea de preferencias -->
+                Preferencias: <br>
+                <textarea name="preferencias" id="preferencias" placeholder="Ingrese sus preferencias"></textarea>
+            </label>
+            <br><br>
+
+            <label for="">Suba su foto de perfil:</label> <!-- Foto de perfil -->
+            <input type="file" name="perfil" id="perfil">
+
+            <br><br>
+            <label for="lenguajes">¿Qué lenguajes conoces?</label> <!-- Opciones de lenguajes -->
+            <select name="lenguajes" id="lenguajes">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+            </select>
+
+            <br><br>
+            <label for="horas">¿Cuàntas horas de programación estudias al día?</label>
+            <input type="number" name="horas" id="horas" step="any" min="0" max="24">
+
+            <br><br>
+            <button type="submit">Guardar</button>
+        </form>
+    </main>
+</body>
+</html>

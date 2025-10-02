@@ -3,27 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Laboratorio 06 - Formularios | Registro</title>
 </head>
 <body>
-    <h1>Registro a boletín de noticias</h1>
-    <form action="#" method="post">
-        <fieldset>
-            <label for="nombre">Nombre completo:</label> <!-- Para el nombre -->
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
-            <br><br>
-            <label for="correo">Correo electrónico</label> <!-- Para el email -->
-            <input type="email" name="correo" id="correo" placeholder="Escribe tu correo electrónico">
-            <br><br>
-            <label for="acepto"> <!-- Para aceptar o no S-->
-                <input type="checkbox" name="acepto">
-                Acepto recibir correos promocionales
-            </label>
-            <br><br>
-    
-            <button type="submit">Suscribirse</button>
-            <button type="submit">Resetear formularios</button>
-        </fieldset>
-    </form>
+    <header>
+        <h1>Registro a boletín de noticias</h1>
+        <nav>
+            <p>Menú de navegación:</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="lenguajes.html">Lenguajes</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr><br>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <label for="nombre">Nombre completo:</label> <!-- Para el nombre -->
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                <br><br>
+                <label for="correo">Correo electrónico</label> <!-- Para el email -->
+                <input type="email" name="correo" id="correo" placeholder="Escribe tu correo electrónico">
+                <br><br>
+                <label for="acepto"> <!-- Para aceptar o no S-->
+                    <input type="checkbox" name="acepto">
+                    Acepto recibir correos promocionales
+                </label>
+                <br><br>
+        
+                <button type="submit">Suscribirse</button>
+                <button type="submit">Resetear formularios</button>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
