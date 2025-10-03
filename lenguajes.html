@@ -23,33 +23,36 @@
     <hr><br>
 
     <main> <!-- Contenido principal -->
-        <form action="#" method="post">
-            <label for="preferencias"> <!-- Textarea de preferencias -->
-                Preferencias: <br>
-                <textarea name="preferencias" id="preferencias" placeholder="Ingrese sus preferencias"></textarea>
-            </label>
-            <br><br>
-
-            <label for="">Suba su foto de perfil:</label> <!-- Foto de perfil -->
-            <input type="file" name="perfil" id="perfil">
-
-            <br><br>
-            <label for="lenguajes">¿Qué lenguajes conoces?</label> <!-- Opciones de lenguajes -->
-            <select name="lenguajes" id="lenguajes">
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <option value="Javascript">Javascript</option>
-                <option value="Python">Python</option>
-                <option value="Java">Java</option>
-            </select>
-
-            <br><br>
-            <label for="horas">¿Cuàntas horas de programación estudias al día?</label>
-            <input type="number" name="horas" id="horas" step="any" min="0" max="24">
-
-            <br><br>
-            <button type="submit">Guardar</button>
-        </form>
+        <fieldset>
+            <legend>Lenguajes de Programación</legend>
+            <form action="#" method="post">
+                <label for="preferencias"> <!-- Textarea de preferencias -->
+                    Preferencias: <br>
+                    <textarea name="preferencias" id="preferencias" placeholder="Ingrese sus preferencias"></textarea>
+                </label>
+                <br><br>
+    
+                <label for="">Suba su foto de perfil:</label> <!-- Foto de perfil -->
+                <input type="file" name="perfil" id="perfil">
+    
+                <br><br>
+                <label for="lenguajes">¿Qué lenguajes conoces?</label> <!-- Opciones de lenguajes -->
+                <select name="lenguajes" id="lenguajes">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                </select>
+    
+                <br><br>
+                <label for="horas">¿Cuàntas horas de programación estudias al día?</label>
+                <input type="number" name="horas" id="horas" step="any" min="0" max="24">
+    
+                <br><br>
+                <button type="submit">Guardar</button>
+            </form>
+        </fieldset>
     </main>
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 06 - Formularios | Validación</title>
+</head>
+<body>
+    <header>
+        <h1>Validación</h1>
+        <nav> <!-- Menú principal que conecta con las demás páginas -->
+            <p>Menú de navegación:</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="lenguajes.html">Lenguajes</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr><br>
+
+    <main>
+        <fieldset>
+            <legend>Formulario de validación de datos</legend>
+            <form action="#" method="post">
+                <label for="correo">Correo electrónico</label> <!-- Para el correo electrónico -->
+                <input type="email" name="correo" id="correo" placeholder="Escriba su correo electrónico" required>
+                <br><br>
+    
+                <label for="contrasena">Contraseña</label>
+                <input type="password" name="contrasena" id="contrasena" maxlength="12" minlength="6" required pattern="{6,12}" title="La contraseña debe tener entre 6 a 12 caracteres">
+                <br>
+                <label for="contrasena">Validar contraseña</label>
+                <input type="password" name="contrasena" id="contrasena" maxlength="12" minlength="6" required pattern="{6,12}" title="La contraseña debe tener entre 6 a 12 caracteres">
+                <br><br>
+
+                <button type="submit">Enviar datos</button>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>
