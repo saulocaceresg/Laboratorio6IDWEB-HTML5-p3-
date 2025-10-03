@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 06 - Formularios | Cursos</title>
+</head>
+<body>
+    <header>
+        <h1>Cursos</h1>
+        <nav> <!-- Menú principal que conecta con las demás páginas -->
+            <p>Menú de navegación:</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="lenguajes.html">Lenguajes</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr><br>
+
+    <main>
+        <fieldset>
+            <legend>Formulario de Cursos</legend>
+            <form action="#" method="get">
+                <label for="nombre">Nombres:</label> <!-- Para el nombre -->
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" required pattern="[A-Aa-zÁÉÍÓÚáéíóúÑñ\s]+"><br><br>
+                <label for="apellido">Apellidos:</label> <!-- Para apellidos -->
+                <input type="text" name="apellido" id="apellido" placeholder="Escriba sus apellidos" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"><br><br>
+                <label for="dni">DNI:</label> <!-- Para DNI -->
+                <input type="text" name="dni" id="dni" minlength="6" maxlength="6" required pattern="[0-9]{6}"><br><br>
+                <label for="correo">Correo electrónico</label> <!-- Para el email -->
+                <input type="email" name="correo" id="correo" placeholder="Escriba su correo electrónico" required><br><br>
+
+                <label for="curso">Selecciona curso</label> <!-- Para seleccionar el curso -->
+                <select name="curso" id="curso">
+                    <option value="HTML y CSS">HTML y CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                </select><br><br>
+
+                <label>Modalidad:</label><br> <!-- Para elegir la modalidad (solo uno) -->
+                <label for="presencial">
+                    <input type="radio" name="modalidad" id="presencial" value="presencial">
+                    Presencial
+                </label><br>
+                <label for="virtual">
+                    <input type="radio" name="modalidad" id="virtual" value="virtual">
+                    Virtual
+                </label><br><br>
+
+                <label>Horarios disponibles:</label><br> <!-- Para elegir horario (Mañana, tarde, noche; pueden ser varios)-->
+                <label for="mañana">
+                    <input type="checkbox" name="turno" id="mañana" value="mañana">
+                    Mañana
+                </label><br>
+                <label for="tarde">
+                    <input type="checkbox" name="turno" id="tarde" value="tarde">
+                    Tarde
+                </label><br>
+                <label for="noche">
+                    <input type="checkbox" name="turno" id="noche" value="noche">
+                    Noche
+                </label><br><br>
+
+                <label> <!-- Para dejar un comentario -->
+                    Deja un comentario: <br>
+                    <textarea name="comentario" id="comentario"></textarea>
+                </label><br><br>
+                <button type="submit">Enviar</button>
+                <button type="submit">Reestrablecer</button>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>
